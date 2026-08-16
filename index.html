@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070b16">
+  <meta name="description" content="20대의 생성형 AI 활용과 격차 — 공식 통계와 연구를 바탕으로 만든 12장 웹 프레젠테이션">
+  <title>20대의 생성형 AI 활용과 격차</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="deck-shell" id="deckShell">
+    <header class="topbar" aria-label="프레젠테이션 정보">
+      <a class="wordmark" href="#1" aria-label="첫 슬라이드로 이동">
+        <span class="wordmark-dot"></span>
+        <span>AI / TWENTIES</span>
+      </a>
+      <div class="topbar-meta">
+        <span class="topbar-topic">20대의 생성형 AI 활용과 격차</span>
+        <span class="slide-count"><b id="currentSlide">01</b> / <span id="totalSlides">12</span></span>
+      </div>
+    </header>
+
+    <main class="viewport" id="viewport" aria-live="polite">
+      <div class="stage" id="stage">
+        <section class="slide slide-cover is-active" data-title="표지" aria-label="1. 표지">
+          <canvas class="canvas canvas-hero" id="heroCanvas" aria-hidden="true"></canvas>
+          <div class="grid-glow"></div>
+          <div class="slide-inner cover-layout">
+            <div class="eyebrow"><span>DEEP RESEARCH DECK</span><span>2026.08</span></div>
+            <div class="cover-copy">
+              <p class="section-code">01 — THE NEW DIVIDE</p>
+              <h1>가장 많이 쓰는 세대가<br><em>가장 크게 갈린다</em></h1>
+              <p class="cover-subtitle">20대의 생성형 AI 활용과 새로운 격차</p>
+            </div>
+            <div class="cover-stat" aria-label="2025년 20대 생성형 AI 이용률 69.5퍼센트">
+              <span class="stat-label">20대 이용률 · 2025</span>
+              <strong>69.5<small>%</small></strong>
+              <span class="stat-delta">전년 대비 +33.6%p</span>
+            </div>
+            <div class="cover-thesis">
+              <span class="thesis-mark">→</span>
+              <p>격차의 중심은 <b>접속 여부</b>에서<br><b>질문·검증·적용·성과</b>로 이동한다.</p>
+            </div>
+          </div>
+          <footer class="source-line">출처: KISDI, 「AI 포용성 제고 방안 연구」(2026)</footer>
+        </section>
+
+        <section class="slide slide-thesis" data-title="핵심 주장" aria-label="2. 핵심 주장">
+          <div class="slide-inner thesis-layout">
+            <div class="section-head">
+              <span class="section-num">02</span>
+              <span class="section-label">CORE THESIS</span>
+            </div>
+            <h2>이용률이 오를수록,<br><em>격차의 위치가 이동한다.</em></h2>
+            <div class="shift-track" aria-label="AI 격차의 세 단계">
+              <article class="shift-step">
+                <span class="step-index">01</span>
+                <h3>접근 격차</h3>
+                <p>알고 있는가<br>접속할 수 있는가</p>
+              </article>
+              <div class="shift-arrow"><span>확산</span><i></i></div>
+              <article class="shift-step is-accent">
+                <span class="step-index">02</span>
+                <h3>활용 격차</h3>
+                <p>질문하고<br>검증할 수 있는가</p>
+              </article>
+              <div class="shift-arrow"><span>누적</span><i></i></div>
+              <article class="shift-step is-hot">
+                <span class="step-index">03</span>
+                <h3>성과 격차</h3>
+                <p>학습·일·취업의<br>결과로 전환하는가</p>
+              </article>
+            </div>
+            <p class="takeaway"><span>핵심</span> 20대 내부의 차이는 “누가 쓰는가”보다 “어떻게 쓰고 무엇을 남기는가”에서 커진다.</p>
+          </div>
+        </section>
+
+        <section class="slide slide-data" data-title="확산 속도" aria-label="3. 20대 이용률의 급상승">
+          <div class="slide-inner data-layout">
+            <div class="section-head">
+              <span class="section-num">03</span>
+              <span class="section-label">ADOPTION SURGE</span>
+            </div>
+            <div class="split-heading">
+              <div>
+                <p class="overline">2024 → 2025</p>
+                <h2>20대 이용률,<br><em>1년 만에 두 배 가까이.</em></h2>
+              </div>
+              <p class="side-note">확산 속도는 세대 중 가장 빠르다.<br>하지만 인지율과 이용률 사이에는 여전히 틈이 있다.</p>
+            </div>
+            <div class="chart-shell chart-adoption-shell">
+              <canvas id="adoptionChart" class="canvas chart-canvas" role="img" aria-label="20대 생성형 AI 이용률: 2024년 35.9퍼센트, 2025년 69.5퍼센트. 2025년 인지율 84.5퍼센트"></canvas>
+              <div class="chart-legend">
+                <span><i class="legend-block is-blue"></i>이용률</span>
+                <span><i class="legend-line"></i>인지율</span>
+              </div>
+              <div class="gap-callout"><b>15.0%p</b><span>인지–이용 간극</span></div>
+            </div>
+            <div class="metric-strip">
+              <div><span>2024 이용</span><strong>35.9%</strong></div>
+              <div class="metric-primary"><span>2025 이용</span><strong>69.5%</strong></div>
+              <div><span>2025 인지</span><strong>84.5%</strong></div>
+              <div><span>전체 이용률</span><strong>31.6%</strong></div>
+            </div>
+          </div>
+          <footer class="source-line">출처: KISDI, 「AI 포용성 제고 방안 연구」(2026) · 2024/2025 한국미디어패널조사</footer>
+        </section>
+
+        <section class="slide slide-uses" data-title="활용 목적" aria-label="4. 20대의 생성형 AI 활용 목적">
+          <div class="slide-inner uses-layout">
+            <div class="section-head">
+              <span class="section-num">04</span>
+              <span class="section-label">USE MIX</span>
+            </div>
+            <div class="split-heading compact">
+              <div>
+                <p class="overline">20대 이용자 · 2024</p>
+                <h2>검색을 넘어,<br><em>학습과 일로 번진다.</em></h2>
+              </div>
+              <p class="side-note">활용 목적이 다양해질수록<br>단순 접속보다 목적 설계 능력이 중요해진다.</p>
+            </div>
+            <div class="uses-main">
+              <canvas id="useChart" class="canvas chart-canvas" role="img" aria-label="20대 생성형 AI 활용 목적: 정보검색 57.1퍼센트, 학업 24.3퍼센트, 업무 17.4퍼센트, 기타 1.2퍼센트"></canvas>
+              <div class="use-notes">
+                <article>
+                  <span class="note-num">01</span>
+                  <h3>검색의 대체</h3>
+                  <p>답을 얻는 속도는 빨라졌지만, 출처 검증이 새 과제가 됐다.</p>
+                </article>
+                <article>
+                  <span class="note-num">02</span>
+                  <h3>학습의 재설계</h3>
+                  <p>설명·초안·피드백이 쉬워졌지만, 사고 과정의 외주화 위험이 생겼다.</p>
+                </article>
+                <article>
+                  <span class="note-num">03</span>
+                  <h3>업무의 선행 경험</h3>
+                  <p>경력 전에도 생산 도구를 쓰지만, 실무 맥락을 아는 사람과 격차가 난다.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+          <footer class="source-line">출처: KISDI, 「생성형 AI 이용 현황 및 연령별 이용행태 분석」(2025)</footer>
+        </section>
+
+        <section class="slide slide-layers" data-title="격차의 6개 층" aria-label="5. 생성형 AI 격차의 여섯 층">
+          <div class="slide-inner layers-layout">
+            <div class="section-head">
+              <span class="section-num">05</span>
+              <span class="section-label">SIX LAYERS OF DIVIDE</span>
+            </div>
+            <div class="split-heading compact">
+              <h2>“쓸 수 있다”와<br><em>“앞서갈 수 있다” 사이.</em></h2>
+              <p class="side-note">아래로 갈수록 단기 지원으로 해결하기 어렵고,<br>학습·노동시장 성과에 오래 남는다.</p>
+            </div>
+            <div class="layer-stack">
+              <article style="--w: 58%; --delay: 0">
+                <span>01</span><h3>인지·접근</h3><p>도구를 알고, 기기·계정으로 접속</p><i>기반</i>
+              </article>
+              <article style="--w: 66%; --delay: 1">
+                <span>02</span><h3>기회·환경</h3><p>수업·직장·동료를 통한 반복 사용</p><i>노출</i>
+              </article>
+              <article style="--w: 74%; --delay: 2">
+                <span>03</span><h3>문해력·검증</h3><p>문제 정의, 질문, 출처 확인</p><i>역량</i>
+              </article>
+              <article style="--w: 82%; --delay: 3">
+                <span>04</span><h3>유료 접근</h3><p>고성능 모델·한도·부가 기능</p><i>자원</i>
+              </article>
+              <article style="--w: 90%; --delay: 4">
+                <span>05</span><h3>적용·성과</h3><p>학습 결과, 포트폴리오, 생산성</p><i>전환</i>
+              </article>
+              <article class="is-final" style="--w: 98%; --delay: 5">
+                <span>06</span><h3>경력·기회</h3><p>채용 진입, 직무 이동, 임금</p><i>누적</i>
+              </article>
+            </div>
+            <p class="evidence-chip"><span>관찰</span> 디지털 기기 활용 역량과 디지털 전환 태도는 AI 챗봇 이용을 가르는 주요 요인이다.</p>
+          </div>
+          <footer class="source-line">근거: KISDI, 「AI 챗봇 이용의 결정요인과 활용 양상」(2024) · 본 슬라이드의 6단계는 연구 종합에 따른 분석틀</footer>
+        </section>
+
+        <section class="slide slide-productivity" data-title="생산성 역설" aria-label="6. 생성형 AI와 생산성 역설">
+          <div class="slide-inner productivity-layout">
+            <div class="section-head">
+              <span class="section-num">06</span>
+              <span class="section-label">PRODUCTIVITY PARADOX</span>
+            </div>
+            <div class="split-heading">
+              <div>
+                <p class="overline">한국은행 실증 분석 · 2026</p>
+                <h2>시간은 줄었다.<br><em>성과는 자동으로 늘지 않았다.</em></h2>
+              </div>
+              <p class="side-note">AI의 이익은 도구 보유가 아니라<br>절약한 시간을 가치로 바꾸는 조직·개인 역량에서 발생한다.</p>
+            </div>
+            <div class="productivity-grid">
+              <canvas id="productivityChart" class="canvas chart-canvas" role="img" aria-label="AI 활용 시 평균 업무시간 3.8퍼센트 감소, 잠재 생산성 1.0퍼센트 증가, 절감 시간과 실제 생산량의 상관계수 0"></canvas>
+              <div class="paradox-equation">
+                <div><span>절약한 시간</span><strong>−3.8%</strong><small>주당 약 1.5시간</small></div>
+                <b>≠</b>
+                <div><span>실현된 성과</span><strong>자동 증가 X</strong><small>상관계수 0</small></div>
+              </div>
+            </div>
+            <p class="takeaway"><span>시사점</span> 20대에게 필요한 것은 “프롬프트 몇 개”가 아니라, 결과물을 검증하고 실제 과업에 연결하는 반복 경험이다.</p>
+          </div>
+          <footer class="source-line">출처: 한국은행, 「AI 활용이 근로자의 생산성에 미치는 영향」(2026.06)</footer>
+        </section>
+
+        <section class="slide slide-jobs" data-title="고용의 역설" aria-label="7. 청년 고용과 생성형 AI">
+          <div class="slide-inner jobs-layout">
+            <div class="section-head">
+              <span class="section-num">07</span>
+              <span class="section-label">ENTRY-LEVEL PRESSURE</span>
+            </div>
+            <div class="jobs-copy">
+              <p class="overline">최근 3년 · 15–29세 취업자</p>
+              <h2>AI는 경험 격차를 줄이고,<br><em>경력의 입구는 좁힐 수 있다.</em></h2>
+            </div>
+            <div class="jobs-visual">
+              <canvas id="employmentChart" class="canvas chart-canvas" role="img" aria-label="최근 3년 청년 취업자 21만 1천명 감소, 이 중 AI 고노출 업종에서 20만 8천명 감소"></canvas>
+              <div class="jobs-stat">
+                <span>청년 취업자 감소</span>
+                <strong>−21.1<small>만 명</small></strong>
+                <p>그중 <b>−20.8만 명</b>이<br>AI 고노출 업종에 집중</p>
+              </div>
+              <div class="jobs-balance">
+                <article>
+                  <span class="balance-icon">＋</span>
+                  <h3>보완</h3>
+                  <p>판단·소통·현장 맥락이 필요한 직무는 AI와 결합해 생산성을 높인다.</p>
+                </article>
+                <article>
+                  <span class="balance-icon is-minus">−</span>
+                  <h3>대체 압력</h3>
+                  <p>초안·정리·반복 중심의 입문 과업은 자동화되어 첫 경력 기회가 줄 수 있다.</p>
+                </article>
+              </div>
+            </div>
+            <p class="caution"><span>주의</span> 업종별 동행 관계를 보여주는 결과이며, 장기적 인과·임금 효과는 아직 확정되지 않았다.</p>
+          </div>
+          <footer class="source-line">출처: 한국은행, 「AI 확산과 청년고용」(2025.10)</footer>
+        </section>
+
+        <section class="slide slide-learning" data-title="학습의 역설" aria-label="8. 생성형 AI와 학습의 역설">
+          <div class="slide-inner learning-layout">
+            <div class="section-head">
+              <span class="section-num">08</span>
+              <span class="section-label">LEARNING PARADOX</span>
+            </div>
+            <div class="split-heading">
+              <div>
+                <p class="overline">OECD DIGITAL EDUCATION OUTLOOK · 2026</p>
+                <h2>과제 성능은 오를 수 있다.<br><em>학습까지 오른다는 뜻은 아니다.</em></h2>
+              </div>
+              <p class="side-note">AI 없이 다시 수행할 때 효과가 사라지거나<br>역전될 수 있다는 연구들을 OECD가 종합했다.</p>
+            </div>
+            <div class="learning-split">
+              <article class="learning-mode is-risk">
+                <span class="mode-tag">SHORTCUT</span>
+                <div class="mode-icon"><i></i><i></i><i></i></div>
+                <h3>답안을 대신 생성</h3>
+                <ul>
+                  <li>완성본을 먼저 받는다</li>
+                  <li>출처·오류를 확인하지 않는다</li>
+                  <li>설명할 수 없는 결과가 남는다</li>
+                </ul>
+                <strong>즉시 성능 ↑ / 전이 학습 ?</strong>
+              </article>
+              <div class="learning-vs">VS</div>
+              <article class="learning-mode is-growth">
+                <span class="mode-tag">SCAFFOLD</span>
+                <div class="mode-icon is-growth"><i></i><i></i><i></i></div>
+                <h3>사고를 확장하는 도구</h3>
+                <ul>
+                  <li>내 답을 먼저 만들고 비교한다</li>
+                  <li>반례·근거·피드백을 요구한다</li>
+                  <li>과정을 기록하고 재수행한다</li>
+                </ul>
+                <strong>과정 품질 ↑ / 독립 수행 ↑</strong>
+              </article>
+            </div>
+          </div>
+          <footer class="source-line">출처: OECD, Digital Education Outlook 2026 · 학습용으로 설계된 AI는 학습을 지원할 수 있음</footer>
+        </section>
+
+        <section class="slide slide-compound" data-title="같은 도구, 다른 복리" aria-label="9. AI 활용 방식에 따른 격차의 누적">
+          <div class="slide-inner compound-layout">
+            <div class="section-head">
+              <span class="section-num">09</span>
+              <span class="section-label">SAME TOOL, DIFFERENT COMPOUNDING</span>
+            </div>
+            <div class="split-heading compact">
+              <h2>같은 AI를 써도<br><em>남는 자산은 다르다.</em></h2>
+              <p class="side-note"><span class="inference">분석</span> 활용 방식이 반복될수록<br>결과물·지식·평판·기회의 차이가 복리로 누적된다.</p>
+            </div>
+            <div class="compound-paths">
+              <article class="path path-shortcut">
+                <div class="path-head"><span>01</span><h3>대행형</h3><b>OUTPUT ONLY</b></div>
+                <p>요청 → 복사 → 제출</p>
+                <div class="path-line"><i></i><i></i><i></i><i></i></div>
+                <ul><li>결과물은 남음</li><li>설명력은 약함</li><li>도구 중단 시 취약</li></ul>
+              </article>
+              <article class="path path-copilot">
+                <div class="path-head"><span>02</span><h3>협업형</h3><b>ITERATE</b></div>
+                <p>초안 → 반론 → 검증 → 수정</p>
+                <div class="path-line"><i></i><i></i><i></i><i></i></div>
+                <ul><li>사고 과정 축적</li><li>검증 습관 형성</li><li>독립 수행 가능</li></ul>
+              </article>
+              <article class="path path-builder">
+                <div class="path-head"><span>03</span><h3>구축형</h3><b>SYSTEMIZE</b></div>
+                <p>문제 → 워크플로 → 데이터 → 자산</p>
+                <div class="path-line"><i></i><i></i><i></i><i></i></div>
+                <ul><li>재사용 체계 생성</li><li>도메인 지식 결합</li><li>포트폴리오로 전환</li></ul>
+              </article>
+            </div>
+            <div class="compound-axis"><span>단기 편의</span><i></i><span>장기 기회</span></div>
+          </div>
+          <footer class="source-line">분석틀: KISDI·한국은행·OECD 결과를 종합한 해석이며, 세 유형의 인구 비율을 뜻하지 않음</footer>
+        </section>
+
+        <section class="slide slide-skills" data-title="필요 역량" aria-label="10. 20대에게 필요한 다섯 가지 AI 역량">
+          <div class="slide-inner skills-layout">
+            <div class="section-head">
+              <span class="section-num">10</span>
+              <span class="section-label">FIVE CAPABILITIES</span>
+            </div>
+            <div class="skills-heading">
+              <h2>프롬프트보다 오래가는<br><em>5개의 전환 역량.</em></h2>
+              <p>도구는 바뀌어도<br>이 능력은 남는다.</p>
+            </div>
+            <div class="skills-orbit">
+              <canvas id="skillsCanvas" class="canvas skills-canvas" aria-hidden="true"></canvas>
+              <div class="skill-core"><span>AI</span><b>→</b><strong>성과</strong></div>
+              <article class="skill-node node-1"><span>01</span><h3>문제 정의</h3><p>무엇을 풀지 경계 짓기</p></article>
+              <article class="skill-node node-2"><span>02</span><h3>근거 검증</h3><p>출처·수치·반례 확인</p></article>
+              <article class="skill-node node-3"><span>03</span><h3>반복 개선</h3><p>초안→비판→수정 기록</p></article>
+              <article class="skill-node node-4"><span>04</span><h3>도메인 적용</h3><p>전공·현장 맥락과 결합</p></article>
+              <article class="skill-node node-5"><span>05</span><h3>책임 판단</h3><p>공개·저작권·윤리 결정</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide slide-actions" data-title="실행 제안" aria-label="11. 이해관계자별 실행 제안">
+          <div class="slide-inner actions-layout">
+            <div class="section-head">
+              <span class="section-num">11</span>
+              <span class="section-label">ACTION AGENDA</span>
+            </div>
+            <div class="split-heading compact">
+              <h2>도구 보급을 넘어,<br><em>기회가 순환하는 구조로.</em></h2>
+              <p class="side-note">핵심 지표도 “계정 수”가 아니라<br>검증 가능한 학습·업무·채용 성과로 바뀌어야 한다.</p>
+            </div>
+            <div class="action-list">
+              <article>
+                <span class="action-index">01</span>
+                <h3>대학</h3>
+                <p>전공 과제에 <b>과정 기록·출처 검증·AI 사용 공개</b>를 포함하고, 공동 고성능 계정을 제공한다.</p>
+                <i>평가 재설계</i>
+              </article>
+              <article>
+                <span class="action-index">02</span>
+                <h3>청년</h3>
+                <p>완성본보다 <b>질문·반례·수정 이력</b>을 남기고, 결과를 포트폴리오와 재현 가능한 워크플로로 만든다.</p>
+                <i>자산화</i>
+              </article>
+              <article>
+                <span class="action-index">03</span>
+                <h3>기업</h3>
+                <p>입문 과업을 없애기보다 <b>AI 보조형 도제·주니어 프로젝트</b>로 바꾸고, 최종 판단 책임을 훈련한다.</p>
+                <i>경력 입구</i>
+              </article>
+              <article>
+                <span class="action-index">04</span>
+                <h3>정부</h3>
+                <p>연령×학력×소득×고용상태의 <b>교차통계</b>와 유료 접근·성과 지표를 정기 공개한다.</p>
+                <i>측정 인프라</i>
+              </article>
+            </div>
+            <div class="action-principle"><span>원칙</span><p>접근 지원 + 활용 역량 + 경력 기회가 <b>동시에</b> 움직여야 격차가 줄어든다.</p></div>
+          </div>
+        </section>
+
+        <section class="slide slide-close" data-title="결론·출처" aria-label="12. 결론과 주요 출처">
+          <canvas class="canvas canvas-close" id="closeCanvas" aria-hidden="true"></canvas>
+          <div class="slide-inner close-layout">
+            <div class="section-head">
+              <span class="section-num">12</span>
+              <span class="section-label">CONCLUSION & SOURCES</span>
+            </div>
+            <div class="close-message">
+              <p>THE QUESTION IS NOT WHO USES AI.</p>
+              <h2>모두가 쓰는 AI에서,<br><em>모두가 성장하는 AI로.</em></h2>
+              <div class="close-rule"></div>
+              <strong>다음 격차를 줄이는 기준은<br>접속이 아니라 <span>성장 가능성</span>이다.</strong>
+            </div>
+            <div class="source-registry">
+              <h3>주요 출처</h3>
+              <ol>
+                <li><a href="https://www.kisdi.re.kr/report/fileView.do?arrMasterId=4333447&amp;id=1938416&amp;key=m2101113025790" target="_blank" rel="noreferrer">KISDI · AI 포용성 제고 방안 연구 (2026)</a></li>
+                <li><a href="https://library.kisdi.re.kr/main.do/10230/contents/4333447?articleId=1865976&amp;checkinId=3686269" target="_blank" rel="noreferrer">KISDI · 생성형 AI 연령별 이용행태 (2025)</a></li>
+                <li><a href="https://library.kisdi.re.kr/main.do/10150/contents/4333447?articleId=1789216&amp;checkinId=3096269" target="_blank" rel="noreferrer">KISDI · AI 챗봇 이용 결정요인 (2024)</a></li>
+                <li><a href="https://www.bok.or.kr/portal/bbs/P0002353/view.do?depth=200433&amp;depth2=201156&amp;depth3=200433&amp;menuNo=200433&amp;nttId=10098322" target="_blank" rel="noreferrer">한국은행 · AI와 근로자 생산성 (2026)</a></li>
+                <li><a href="https://www.bok.or.kr/portal/bbs/P0002353/view.do?depth=200433&amp;menuNo=200433&amp;nttId=10094258&amp;programType=newsData&amp;relate=Y" target="_blank" rel="noreferrer">한국은행 · AI 확산과 청년고용 (2025)</a></li>
+                <li><a href="https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html" target="_blank" rel="noreferrer">OECD · Digital Education Outlook 2026</a></li>
+              </ol>
+              <div class="method-note">
+                <b>읽는 법</b>
+                <p>조사별 표본·질문·기준연도가 달라 수치를 단순 합산하지 않았다. 20대 내부의 학력·소득·고용 교차통계가 부족해, 격차의 6단계와 3개 활용 유형은 공식 결과를 종합한 분석틀로 제시했다.</p>
+              </div>
+            </div>
+          </div>
+          <footer class="source-line">자료 확인 기준일: 2026.08.16 · 공식 원문 우선, 해석과 사실을 구분</footer>
+        </section>
+      </div>
+    </main>
+
+    <div class="progress-track" aria-hidden="true"><span id="progressBar"></span></div>
+    <nav class="controls" aria-label="슬라이드 이동">
+      <button type="button" id="prevBtn" aria-label="이전 슬라이드">←</button>
+      <button type="button" id="overviewBtn" aria-label="슬라이드 전체 보기">▦</button>
+      <button type="button" id="fullscreenBtn" aria-label="전체 화면">⛶</button>
+      <button type="button" id="nextBtn" aria-label="다음 슬라이드">→</button>
+    </nav>
+    <div class="key-hint"><span>← →</span> 이동 <span>O</span> 전체 보기 <span>F</span> 전체화면</div>
+  </div>
+
+  <div class="overview" id="overview" aria-hidden="true">
+    <div class="overview-head"><h2>SLIDE INDEX</h2><button id="closeOverview" type="button">닫기 ×</button></div>
+    <div class="overview-grid" id="overviewGrid"></div>
+  </div>
+
+  <noscript>이 프레젠테이션은 슬라이드 이동과 데이터 시각화를 위해 JavaScript가 필요합니다.</noscript>
+  <script src="app.js"></script>
+</body>
+</html>
